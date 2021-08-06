@@ -1,0 +1,127 @@
+// Global styling for this template
+@font-face {
+  font-family: "Constantia";
+  src: url("../fonts/constan.ttf") format("ttf");
+}
+body {
+  overflow-x: hidden;
+  background-color: #fefaf6;
+  color: $black;
+  font-size: 15px;
+  @include constantia;
+}
+body.js-no-scroll {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+
+p {
+  line-height: 1.75;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.wt-block-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -2;
+  border-radius: inherit;
+  .wt-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+section {
+  padding: 35px 0;
+}
+
+// Button Styles
+.btn {
+  font-size: 14px;
+  line-height: 1.2;
+  border-radius: 0;
+  border-width: 2px;
+  white-space: normal;
+}
+.wt-btn-size-sm {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.wt-btn-size-md {
+  padding: 12px 24px;
+}
+.wt-btn-size-xl {
+  font-size: 15px;
+  padding: 15px 30px;
+}
+
+.wt-btn-primary {
+  background-color: $yellow;
+  border-color: $yellow;
+  color: $black !important;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken($yellow, 7.5%) !important;
+    border-color: darken($yellow, 7.5%) !important;
+    color: $black !important;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
+  }
+}
+.wt-btn-rounded {
+  border-radius: 25px;
+}
+
+// Highlight color customization
+::-moz-selection {
+  background: $primary-200;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+// Media queries
+@media (max-width: 767px) {
+
+}
+@media (max-width: 575px) {
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 740px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}

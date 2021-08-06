@@ -1,0 +1,36 @@
+.contacts {
+  .contacts-block {
+    text-align: center;
+    .block-item {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-bottom: 20px;
+      a {
+        margin-right: 10px;
+        text-decoration: none;
+        font-size: 22px;
+        color: #484646;
+        i {
+          font-size: 22px;
+          &.fa-phone {
+            color: #484646;
+          }
+          &.fa-whatsapp-square {
+            color: #38D754;
+          }
+          &.fa-telegram {
+            color: #229FD9;
+          }
+          &.fa-envelope {
+            color: #F3B604;
+          }
+        }
+      }
+      span {
+        font-size: 22px;
+        @include roboto-regular;
+      }
+    }
+  }
+}
