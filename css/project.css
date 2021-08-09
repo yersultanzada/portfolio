@@ -314,6 +314,16 @@ img::-moz-selection {
   background-color: #785a46;
 }
 
+.skills .skill-item div.crm {
+  width: 100%;
+  background-color: #05548D;
+}
+
+.skills .skill-item div.bot {
+  width: 100%;
+  background-color: #38D754;
+}
+
 .skills .skill-item div.creo {
   width: 100%;
   background-color: #e8a735;
@@ -583,11 +593,11 @@ img::-moz-selection {
   margin-bottom: 30px;
 }
 
-.reviews .review-item .review-video {
+.reviews .review-item .review-video, .reviews .review-item .review-img {
   height: 200px;
 }
 
-.reviews .review-item .review-video img {
+.reviews .review-item .review-video img, .reviews .review-item .review-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -666,6 +676,7 @@ img::-moz-selection {
   text-decoration: none;
   font-size: 22px;
   color: #484646;
+  font-family: 'Roboto', sans-serif;
 }
 
 .contacts .contacts-block .block-item a i {
@@ -686,11 +697,6 @@ img::-moz-selection {
 
 .contacts .contacts-block .block-item a i.fa-envelope {
   color: #F3B604;
-}
-
-.contacts .contacts-block .block-item span {
-  font-size: 22px;
-  font-family: 'Roboto', sans-serif;
 }
 
 .menu {

@@ -11,6 +11,7 @@
         text-decoration: none;
         font-size: 22px;
         color: #484646;
+        @include roboto-regular;
         i {
           font-size: 22px;
           &.fa-phone {
@@ -26,10 +27,6 @@
             color: #F3B604;
           }
         }
-      }
-      span {
-        font-size: 22px;
-        @include roboto-regular;
       }
     }
   }
