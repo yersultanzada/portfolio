@@ -13,9 +13,11 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this project -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
     <!-- Custom styles for this project -->
     <link href="css/project.min.css" rel="stylesheet">
+      <link href="vendor/video/video.min.css" rel="stylesheet">
   </head>
 
   <body id="page-top">
@@ -52,12 +54,26 @@
             </div>
         </div>
     </section>
+    <div class="video-widget" data-state="default">
+        <div class="video-widget__container">
+            <video id="video-widget__video" loop="" autoplay="" playsinline="" preload="auto" muted="muted" controlslist="nodownload" disablepictureinpicture="" class="video-widget__video" src="img/video.mp4">
+                <source src="img/video.mp4" type="video/mp4">
+            </video>
+            <div class="video-widget__close"></div>
+            <div class="video-widget__hand">
+                <i class="fas fa-hand-pointer"></i>
+                <span></span>
+            </div>
+            <a class="video-widget__button" href="about.html">Обо мне</a>
+        </div>
+    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Custom scripts for this template -->
     <script src="js/project.min.js"></script>
+    <script src="vendor/video/video.min.js"></script>
   </body>
 
 </html>

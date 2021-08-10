@@ -44,6 +44,44 @@ p {
     left: 0;
   }
 }
+.video-widget {
+  .video-widget__hand {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10000;
+    span {
+      position: absolute;
+      top: -9px;
+      right: 5px;
+      display: block;
+      width: 15px;
+      height: 15px;
+      background-color: #e3e3e3;
+      border-radius: 50%;
+      -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.7);
+      -moz-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.7);
+      box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.7);
+      animation: blinker 1s linear infinite;
+    }
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    }
+    i {
+      position: relative;
+      color: #fff;
+      font-size: 20px;
+      z-index: 10;
+    }
+  }
+}
+.video-widget[data-state=opened] {
+  .video-widget__hand {
+    display: none;
+  }
+}
 
 section {
   padding: 35px 0;
